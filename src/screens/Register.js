@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../actions/userAction";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // import Loader from "../components/Loader";
 // import Success from "../components/Success";
 // import Error from "../components/Error";
 const Register = () => {
-//   const registerState = useSelector((state) => state.registerUserReducer);
-//   const { error, success, loading } = registerState;
-
+  //   const registerState = useSelector((state) => state.registerUserReducer);
+  //   const { error, success, loading } = registerState;
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -23,8 +22,8 @@ const Register = () => {
       alert("Password do not match");
     } else {
       const user = { name, email, password, confrimPassword };
-        dispatch(registerUser(user));
-    //   console.log(user);
+      dispatch(registerUser(user));
+      //   console.log(user);
     }
   };
   return (

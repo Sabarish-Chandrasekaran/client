@@ -1,10 +1,10 @@
 import React from "react";
-import { Navbar, Nav, Container, Image, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, Image } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 // import { logoutUser } from "../actions/userAction";
 const NavBar = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const cartState = useSelector((state) => state.cartReducer);
 //   const userState = useSelector((state) => state.loginUserReducer);
 //   const { currentUser } = userState;
