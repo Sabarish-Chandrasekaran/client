@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 // import { logoutUser } from "../actions/userAction";
 const NavBar = () => {
