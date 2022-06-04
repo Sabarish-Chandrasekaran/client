@@ -15,7 +15,7 @@ const HomeScreen = () => {
   // console.log(pizzas);
   useEffect(() => {
     dispatch(getAllPizzas());
-  }, [dispatch]);
+  }, []);
 
   return (
     <>
