@@ -9,7 +9,7 @@ import NavBar from './components/NavBar';
 import HomeScreen from './screens/HomeScreen';
 import CartScreen from './screens/CartScreen';
 import Register from "./screens/Register";
-import Login from "./screens/Login";
+// import Login from "./screens/Login";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/cart" element={<CartScreen />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
